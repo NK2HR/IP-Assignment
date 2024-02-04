@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plants</title>
+</head>
+
+<style>
+    body{
+        /* background-color: indigo; */
+        background: url(./MultimediaForIP/Plantspage-Background.jpg);
+        align-items: center;
+        margin: 10px;
+    }
+
+    .card{
+        background-color: whitesmoke;
+        margin: 30px;
+        justify-content: center;
+        width: 275px;
+        border-radius: 20px;
+        transition: all ease 0.4s;
+        
+    }
+
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card:hover{
+        cursor: pointer;
+        transition: all ease 0.4s;
+        scale: 1.1;
+        background-color: lime;
+        box-shadow: 3px 3px 18px orange;
+        color: black;
+    }
+
+    img{
+        border-radius: 20px;
+    }
+
+    .h3{
+        background-color: orange;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        border-radius: 50px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-left: 200px;
+        margin-right: 200px;
+        animation-name: h3;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes h3 {
+        0%{
+            scale: 0.9;
+        }
+        50%{
+            scale: 0.7;
+        }
+        100%{
+            scale: 0.9;
+        }
+    }
+</style>
+
+<body>
+<div class="h3">
+    <h3>In our farm we produce the finest agricultural products and we're ready to deliver it with the best quality</h3>
+    <h4>Here are the plants we provide in our farm</h4>
+</div><br>
+    <div class="cards" style="font-size: large;">
+        <div class="card">
+            <img src="./MultimediaForIP/Plant 1.jpg">
+            <p style="padding: 10px;"><b>Rice</b> is the most soldout product in our farm </p>
+        </div>
+        <div class="card">
+            <img src="./MultimediaForIP/Plant 2.jpg">
+            <p style="padding: 10px;"><b>Wheat</b> is the second most soldout product in our farm </p>
+        </div>
+        <div class="card" style="width: 272px;">
+            <img src="./MultimediaForIP/Plant 3.jpg">
+            <p style="padding: 10px;"><b>Corn</b> is the most wanted product in the industry</p>
+        </div>
+        <div class="card">
+            <img src="./MultimediaForIP/Plant 4.webp" style="width: 275px;">
+            <p style="padding: 10px; width: 200px;"><b>Animal Feed</b> is used for feeding the animals it helps them get the nutrition they need</p>
+        </div>
+        <div class="card">
+            <img src="./MultimediaForIP/Plant 5.jpg" style="width: 275px;">
+            <p style="padding: 10px;"><b>Crop seeds</b> is the seed or seed-like fruit of grain, beans, flax, beets, onions or any other crop, whether or not intended for planting purposes. </p>
+        </div>
+        <div class="card">
+            <img src="./MultimediaForIP/Plant 6.jpg">
+            <p style="padding: 10px;"><b>Soybeans</b> The soybean, soy bean, or soya bean is a species of legume native to East Asia, widely grown for its edible bean, which has numerous uses.</p>
+        </div>
+       
+    </div>
+</body>
+</html>

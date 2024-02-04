@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer</title>
+</head>
+<body>
+
+<style>
+    /* This is used for the navbar and it's animations */
+* {
+    margin: 10;
+    padding: 10;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background: url(./MultimediaForIP/background2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-left: -50px;
+}
+
+.navbar a{
+    position: relative;
+   font-size: 20px;
+   color: indigo;
+   font-weight: 200;
+   text-decoration: none;
+   margin-left: 20px;
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: indigo;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+/* Untill here is the navbar */
+
+/* This is used for the side card */
+.cards{
+    margin: 8%;
+    padding: 3%;
+    background-color:transparent;
+    margin-right: 1100px;
+    border-radius: 30px;
+    color: lime;
+    font-weight: 900;
+    font-size: larger;
+}
+
+.card{
+    text-decoration: none;
+}
+
+.card:hover{
+    cursor: pointer;
+    animation: all ease 0.4s;
+    scale: 1.1;
+}
+</style>
+
+    <header class="header">
+      <a href="#" class="logo">  
+   
+    <img src="./MultimediaForIP/NKHR^ LOGO.jpg" alt="Logo">
+</a>
+    <nav class="navbar">
+        <a href="#">Products</a>
+        <a href="#">Farmer-Profile</a>
+        <a href="#">Logistics</a>
+        <a href="#">Qaulity-Control</a>
+        <a href="#">Marketing</a>
+    </nav>
+</header>
+
+<div class="cards">
+    <a href="Plants.html" target="_blank">
+    <div class="card">
+        <p>Plants</p>
+    </div></a>
+    <div class="card">
+        <p>Seeds</p>
+    </div>
+    <div class="card">
+        <p>Fertilizers</p>
+    </div>
+    <div class="card">
+        <p>Accessories</p>
+    </div>
+    <div class="card">
+        <p>Pesticides</p>
+    </div>
+</div>
+</body>
+</html>
